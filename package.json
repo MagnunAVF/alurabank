@@ -1,0 +1,22 @@
+{
+  "name": "alurabank",
+  "version": "1.0.0",
+  "description": "Project to improve TypeScript skills. Based on Alura TypeScript course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnunAVF/alurabank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnunAVF/alurabank/issues"
+  },
+  "homepage": "https://github.com/MagnunAVF/alurabank#readme",
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
