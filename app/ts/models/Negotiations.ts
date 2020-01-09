@@ -5,7 +5,7 @@ class Negotiations {
         this._negotiations.push(negotiation);
     }
 
-    toArray(): Negotiations[] {
+    toArray(): Negotiation[] {
         // return a copy of this array (security)
         return [].concat(this._negotiations);
     }
