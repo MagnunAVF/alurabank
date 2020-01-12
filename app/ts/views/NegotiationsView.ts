@@ -1,8 +1,9 @@
-namespace Views {
-    import View = Views.View;
-    export class NegotiationsView extends View<Negotiations> {
-        template(model: Negotiations): string {
-            return `
+import { View } from './View';
+import { Negotiations } from '../models/Negotiations';
+
+export class NegotiationsView extends View<Negotiations> {
+    template(model: Negotiations): string {
+        return `
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -15,7 +16,7 @@ namespace Views {
 
                 <tbody>
                 ${model.toArray().map(negotiation =>
-                `
+            `
                     <tr>
                         <td>${negotiation.date.getDate()}/${negotiation.date.getMonth() + 1}/${negotiation.date.getFullYear()}</td>
                         <td>${negotiation.quantity}</td>
@@ -29,6 +30,5 @@ namespace Views {
                 </tfoot>
             </table>
             `;
-        }
     }
 }
